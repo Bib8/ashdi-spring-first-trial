@@ -6,7 +6,7 @@ import org.junit.Test;
 import static ashdi.com.ashdispringfirsttrial.CalcServiceTestConst.*;
 
 public class CalcServiceImplTest {
-    private CalcServiceImpl out = new CalcServiceImpl();
+    private final CalcServiceImpl out = new CalcServiceImpl();
 
 
     @Test
@@ -43,9 +43,9 @@ public class CalcServiceImplTest {
         Assert.assertEquals(THREE, out.divideResult(THREE, NEGATIVE_THREE));
     }
     //expected R = throw Exception private, divider 3,0
-   /* public void shouldСompareExpectedResRFndActualResAdivideZeroException() throws ZeroDivideExcepton {
-       Assert.assertThrows(ZeroDivideException.class, out.divideResult(THREE, ZERO));
-    }*/
-    //не разобрался еще подумаю
+   public void shouldСompareExpectedResRFndActualResAdivideZeroException(){
+       Assert.assertThrows(ZeroDivideException.class, () -> out.divideResult(THREE, ZERO));
+    }
+
 
 }
