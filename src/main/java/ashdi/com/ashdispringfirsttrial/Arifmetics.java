@@ -1,5 +1,8 @@
 package ashdi.com.ashdispringfirsttrial;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Arifmetics {
     public final int sumResult (int a,int b){
         return a + b;
