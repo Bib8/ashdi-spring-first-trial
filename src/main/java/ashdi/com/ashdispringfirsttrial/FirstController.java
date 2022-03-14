@@ -35,7 +35,7 @@ public class FirstController {
     }
 
     @GetMapping("divide")
-    public String divide(@RequestParam int num1, @RequestParam int num2) throws ZeroDivideException {
+    public int divide(@RequestParam int num1, @RequestParam int num2) throws ZeroDivideException {
         return calcService.divideResult(num1, num2);
     }
 }

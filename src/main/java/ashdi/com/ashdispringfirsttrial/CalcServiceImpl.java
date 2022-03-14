@@ -22,10 +22,10 @@ public class CalcServiceImpl implements CalcService{
     }
 
     @Override
-    public String divideResult(int num1, int num2) throws ZeroDivideException {
+    public int divideResult(int num1, int num2) throws ZeroDivideException {
         if (num2 == 0){
                 throw new ZeroDivideException("Exception: divide by zero.");
-        } else return String.valueOf(num1 / num2);
+        } else return num1 / num2;
     }
 
 
