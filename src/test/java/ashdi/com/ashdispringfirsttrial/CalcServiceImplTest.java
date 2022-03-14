@@ -20,12 +20,12 @@ public class CalcServiceImplTest {
         Assert.assertEquals(ZERO, out.sumResult(NEGATIVE_ONE, ONE));
     }
     @Test
-    //expected R = 0, of sum num 1,1
+    //expected R = 0, of dif num 1,1
     public void shouldCompareExpectedResRFndActualResADiff(){
         Assert.assertEquals(ZERO, out.minusResult(ONE, ONE));
     }
     @Test
-    //expected R = -2, of sum num -1,1
+    //expected R = -2, of dif num -1,1
     public void shouldCompareExpectedResRFndActualResADiffNegative(){
         Assert.assertEquals(NEGATIVE_TWO, out.minusResult(NEGATIVE_ONE, ONE));
     }
